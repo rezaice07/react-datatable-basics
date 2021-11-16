@@ -6,6 +6,8 @@ import PortalDemo from './Portals/PortalDemo';
 import ClickCounter from './HOC/ClickCounter';
 import HoverCounter from './HOC/HoverCounter';
 import UseStateHook from './hooks/UseStateHook';
+import UseStateHookWithObject from './hooks/UseStateHookWithObject';
+import UseStateHookWithArray from './hooks/UseStateHookWithArray';
 
 class App extends Component {
   render() {
@@ -17,7 +19,9 @@ class App extends Component {
         {/* <ClickCounter name='Rejwanul Reja'/>
         <HoverCounter name='Rejwanul Reja'/> */}
 
-        <UseStateHook/>
+        {/* <UseStateHook/> */}
+        {/* <UseStateHookWithObject/> */}
+        <UseStateHookWithArray/>
 
       </div>
     );
