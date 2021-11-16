@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 const UseStateHookWithArray = () => {
-    // let item = {
-    //     id: '',
-    //     value: ''
-    // }
-    //let initItems = [item];
-    const [items, setItems] = useState([]);
+     let item = {
+        id: '',
+        value: ''
+    }
+    let initItems = [item];
+    const [items, setItems] = useState(initItems);
 
     const AddItems = () => {
 
