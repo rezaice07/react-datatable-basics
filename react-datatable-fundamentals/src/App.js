@@ -8,6 +8,9 @@ import HoverCounter from './HOC/HoverCounter';
 import UseStateHook from './hooks/UseStateHook';
 import UseStateHookWithObject from './hooks/UseStateHookWithObject';
 import UseStateHookWithArray from './hooks/UseStateHookWithArray';
+import UseEffectHook from './hooks/UseEffectHook';
+import DidMountUpadate from './LifeCycles/DidMountUpadate';
+import UseEffectForHttps from './hooks/UseEffectForHttps';
 
 class App extends Component {
   render() {
@@ -21,7 +24,12 @@ class App extends Component {
 
         {/* <UseStateHook/> */}
         {/* <UseStateHookWithObject/> */}
-        <UseStateHookWithArray/>
+        {/* <UseStateHookWithArray/> */}
+
+        {/* <UseEffectHook/> */}
+        {/* <DidMountUpadate /> */}
+
+        <UseEffectForHttps />
 
       </div>
     );
