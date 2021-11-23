@@ -11,11 +11,29 @@ import UseStateHookWithArray from './hooks/UseStateHookWithArray';
 import UseEffectHook from './hooks/UseEffectHook';
 import DidMountUpadate from './LifeCycles/DidMountUpadate';
 import UseEffectForHttps from './hooks/UseEffectForHttps';
+import UserAutoComplete from './autocomplete/UserAutoComplete';
+import BoostrapModal from './boostrap-modal/BoostrapModal';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class App extends Component {
+  notify = () => toast("Wow so easy!");
   render() {
     return (
-      <div className="App">
+      <div className="App">        
+        <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+/>
+        <button onClick={this.notify}>Notify!</button>
         {/* <ParentComp/> */}
         {/* <PortalDemo/> */}
 
@@ -29,7 +47,11 @@ class App extends Component {
         {/* <UseEffectHook/> */}
         {/* <DidMountUpadate /> */}
 
-        <UseEffectForHttps />
+        {/* <UseEffectForHttps /> */}
+
+        {/* <UserAutoComplete/> */}
+
+        {/* <BoostrapModal/> */}
 
       </div>
     );
