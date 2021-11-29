@@ -23,7 +23,7 @@ class GreetingCls extends Component {
     }
 
     handleIncrement=()=>{
-        this.setState((preveSate,prevProp)=>({
+        this.setState((preveSate)=>({
 			 count:preveSate.count+1
 		}))
     }
