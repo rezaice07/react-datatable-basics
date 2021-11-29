@@ -22,6 +22,7 @@ import firebase from './Firebase';
 
 import { onMessageListener } from "./Firebase";
 import ImageLazyLoading from './LazyLoadings/ImageLazyLoading';
+import ImageLazyloadingFn from './LazyLoadings/ImageLazyloadingFn';
 
 class App extends Component {
   constructor(props) {
@@ -104,7 +105,10 @@ class App extends Component {
 
         {/* <BoostrapModal/> */}
 
-        <ImageLazyLoading/>
+        {/* <ImageLazyLoading/> */}
+
+        <ImageLazyloadingFn/>
+
 
 
       </div>
