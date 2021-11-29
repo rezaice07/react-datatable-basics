@@ -21,6 +21,7 @@ import firebase from './Firebase';
 // import 'firebase/messaging';
 
 import { onMessageListener } from "./Firebase";
+import ImageLazyLoading from './LazyLoadings/ImageLazyLoading';
 
 class App extends Component {
   constructor(props) {
@@ -72,7 +73,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ToastContainer
+        {/* <ToastContainer
           position="top-center"
           autoClose={5000}
           hideProgressBar={false}
@@ -82,8 +83,8 @@ class App extends Component {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-        />
-        <button onClick={this.notify}>Notify!</button>
+        /> */}
+        {/* <button onClick={this.notify}>Notify!</button> */}
         {/* <ParentComp/> */}
         {/* <PortalDemo/> */}
 
@@ -103,7 +104,7 @@ class App extends Component {
 
         {/* <BoostrapModal/> */}
 
-
+        <ImageLazyLoading/>
 
 
       </div>
