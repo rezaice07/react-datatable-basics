@@ -107,7 +107,7 @@ class App extends Component {
 
         {/* <ImageLazyLoading/> */}
 
-        <ImageLazyloadingFn/>
+        {/* <ImageLazyloadingFn/> */}
 
 
 
