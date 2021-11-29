@@ -16,13 +16,13 @@ import BoostrapModal from './boostrap-modal/BoostrapModal';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import firebase from './Firebase';
-// import 'firebase/messaging';
 
 import { onMessageListener } from "./Firebase";
 import ImageLazyLoading from './LazyLoadings/ImageLazyLoading';
 import ImageLazyloadingFn from './LazyLoadings/ImageLazyloadingFn';
+import GreetingFn from './mehedi-learnings/GreetingFn';
+import GreetingCls from './mehedi-learnings/GreetingCls';
 
 class App extends Component {
   constructor(props) {
@@ -109,34 +109,12 @@ class App extends Component {
 
         {/* <ImageLazyloadingFn/> */}
 
+        {/* <GreetingFn name='Mehedi Hasan' email='mehedi@sample.com' phone='46464646546' /> */}
 
-
+        <GreetingCls name='Mehedi Hasan' email='mehedi@sample.com' phone='46464646546' />
       </div>
     );
   }
 }
 
 export default App;
-
-
-/*
-
-export const getToken = (setTokenFound) => {
-  return messaging.getToken({vapidKey: 'BEzMrv0u_QBCHDaPTYYrB_A_efz73fxykSTAGYbMylycHFNIijCaa48XO1GFDSZ4c9ojR5Dv_OLHqdvKrUu2yCw'}).then((currentToken) => {
-    if (currentToken) {
-      console.log('current token for client: ', currentToken);
-      setTokenFound(true);
-      // Track the token -> client mapping, by sending to backend server
-      // show on the UI that permission is secured
-    } else {
-      console.log('No registration token available. Request permission to generate one.');
-      setTokenFound(false);
-      // shows on the UI that permission is required
-    }
-  }).catch((err) => {
-    console.log('An error occurred while retrieving token. ', err);
-    // catch error while creating client token
-  });
-}
-
-*/
